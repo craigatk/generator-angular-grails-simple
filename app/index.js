@@ -51,4 +51,8 @@ AngularGrailsSimpleGenerator.prototype.app = function app() {
 
 AngularGrailsSimpleGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('jshintrc', '.jshintrc');
+
+  this.mkdir('grails-app');
+  this.mkdir('grails-app/conf');
+  this.copy('_AngularResources.groovy', 'grails-app/conf/AngularResources.groovy');
 };

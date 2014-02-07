@@ -23,7 +23,8 @@ describe('angular-grails-simple generator', function () {
         var expected = [
             // add files you expect to exist here.
             '.jshintrc',
-            '.bowerrc'
+            '.bowerrc',
+            'grails-app/conf/AngularResources.groovy'
         ];
 
         helpers.mockPrompt(this.app, {
