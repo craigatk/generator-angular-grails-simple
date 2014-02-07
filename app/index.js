@@ -37,14 +37,18 @@ AngularGrailsSimpleGenerator.prototype.askFor = function askFor() {
 };
 
 AngularGrailsSimpleGenerator.prototype.app = function app() {
-  this.mkdir('app');
-  this.mkdir('app/templates');
+  this.mkdir('src/angular');
+  this.mkdir('src/angular/js');
+  this.mkdir('src/angular/partials');
+
+  this.mkdir('test/angular');
+  this.mkdir('test/angular/js');
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
+  this.copy('_bowerrc', '.bowerrc');
 };
 
 AngularGrailsSimpleGenerator.prototype.projectfiles = function projectfiles() {
-  this.copy('editorconfig', '.editorconfig');
   this.copy('jshintrc', '.jshintrc');
 };
