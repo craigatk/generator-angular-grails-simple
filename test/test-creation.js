@@ -23,7 +23,7 @@ describe('angular-grails-simple generator', function () {
         var expected = [
             // add files you expect to exist here.
             '.jshintrc',
-            '.editorconfig'
+            '.bowerrc'
         ];
 
         helpers.mockPrompt(this.app, {
